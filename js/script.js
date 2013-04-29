@@ -129,7 +129,7 @@ SpreadSheet.Key = "";
 SpreadSheet.Data = {};
 
 // Private Properties
-var vizPreKeyUrl = "https://spreadsheets.google.com/tq?key=";
+var vizPreKeyUrl = "https://spreadsheets.google.com/ccc?key=";
 var vizArgsKey = "&tq=";
 
 // Public Methods
