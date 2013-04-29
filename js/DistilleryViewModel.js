@@ -1,5 +1,5 @@
 // Class to holds a Bottle attributes
-function BottleViewModel(region, distillery, order, name, alcohol, appearance, nose, taste, finish, description, externalurl, pictureurl, scotchiturl) {
+function BottleViewModel(region, distillery, order, name, alcohol, appearance, origine, taste, finish, description, externalurl, pictureurl, scotchiturl) {
 	var self = this;
 	
 	self.Region = region;
@@ -8,7 +8,7 @@ function BottleViewModel(region, distillery, order, name, alcohol, appearance, n
 	self.Name = name;
 	self.Alcohol = alcohol;
 	self.Appearance = appearance;
-	self.Nose = Origine;
+	self.Origine = Origine;
 	self.Taste = taste;
 	self.Finish = finish;
 	self.Description = description;
