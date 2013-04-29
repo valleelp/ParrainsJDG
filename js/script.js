@@ -44,8 +44,9 @@ DramProject.Setup = function () {
 		DramProject.ViewModel = new DramViewModel();
 		ko.applyBindings(DramProject.ViewModel);
 		
+		https://docs.google.com/spreadsheet/ccc?key=0As20pj4zsHI4dFZuUHl1SVVCOWhnblV5VHhrVG9Za3c#gid=0
 		// Setup Data
-		PL.SpreadSheet.Key = "0AoKnDojyuN8YdGZVaGpoQmhhOE5PbU1pcGRVWFctcUE";
+		PL.SpreadSheet.Key = "0As20pj4zsHI4dFZuUHl1SVVCOWhnblV5VHhrVG9Za3c";
 		PL.SpreadSheet.GetData("select%20*%20order%20by%20A%2C%20B%2C%20C", DramProject.ViewModel.MapperCallback);
 	});
 
