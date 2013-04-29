@@ -8,7 +8,7 @@ function BottleViewModel(region, distillery, order, name, alcohol, appearance, n
 	self.Name = name;
 	self.Alcohol = alcohol;
 	self.Appearance = appearance;
-	self.Nose = nose;
+	self.Nose = Origine;
 	self.Taste = taste;
 	self.Finish = finish;
 	self.Description = description;
