@@ -360,10 +360,15 @@ h3
 	margin-bottom: 0px;
 }
 
-.menu-dele 
+.menu-dele input.change
 {
 	float: left;
 	position: absolute;
 	left: 300px;
 	top: 20px;
+	background-image:url(derp.png);
 }
+
+.menu-dele input.change:hover {
+	background-image:url(mouseover.png);
+} 
