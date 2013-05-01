@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	<meta name="description" content="Info library on Scotch Whisky Single Malt" />
+	<meta name="author" content="Philippe Lavoie" />
+
+	<title>Les parrains</title>
+
+	<!-- Javascript -->
+	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui-1.10.2.slide.js"></script>
+	<!-- // <script type="text/javascript" src="js/jquery.mobile-1.3.0.js"></script> -->
+	<!-- <script type="text/javascript" src="js/jquery.roundabout.min.js"></script> -->
+	<!-- <script type="text/javascript" src="js/bootstrap.min.js"></script> -->
+	<script type="text/javascript" src="js/knockout-2.2.1.js"></script>
+	<script type="text/javascript" src="js/underscore-min.js"></script>
+	<script type="text/javascript" src="js/modernizr-2.6.2.js"></script>
+	<script type="text/javascript" src="js/yepnope.js"></script>
+
+	<script type="text/javascript" src="js/DistilleryViewModel.js"></script>
+	<script type="text/javascript" src="js/DramViewModel.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+
+	<!-- CSS -->
+	<link type="text/css" href="css/style.css" rel="stylesheet" />
+	<!-- <link type="text/css" href="css/bootstrap.min.css" rel="stylesheet" /> -->
+	<!-- <link type="text/css" href="css/jquery.mobile-1.3.0.css" rel="stylesheet" /> -->
+	
+	<!-- Web Font -->
+	<link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css' />
+	
+	<!-- Fav Icon -->
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+
+    <!-- iOS WebClip icons -->
+    <link rel="apple-touch-icon" href="img/logo57.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="img/logo72.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="img/logo114.png" />
+
+</head>
+<body class="center">
+
+	<!-- Menu -->
+	<div id="left-col" class="span3" data-role="page"> 
+		<div id="title-box" class="well title-background">
+			<span class="title">Les</span>
+			<span class="title">Parrains</span>
+			<span class="title">2014</span>
+		</div>
+		<div id="nav-list" class="nav well sidebar-nav">
+			<ul id="paging" class="nav nav-list" data-role="listview" data-bind="template: {name: MenuDisplayMode, foreach: PL.DramProject.ViewModel.Regions, afterRender: PL.DramProject.ViewModel.RenderMenuItem }, jqmRefreshList: PL.DramProject.ViewModel.Regions">
+			</ul>
+		</div>
+	</div>
+
+	<div id="wrapper" data-bind="template: { name: 'distillery-template' , foreach: PL.DramProject.ViewModel.Distilleries, afterRender: PL.DramProject.ViewModel.RenderDistillery }"></div>
+
+	<div id="footer">
+		<div id="footer-button" class="footer-border">
+			<i class="icon-chevron-up footer-arrow"></i>
+		</div>
+		<div id="footer-content" class="footer-border">
+			<div class="center footer-group" >
+				<div class="float-left footer-column" >
+					<h3>The Dram Project</h3>
+					<ul class="footer-list">
+						<li><a target="_blank" href="http://www.linkedin.com/in/philippelavoie" >By: Philippe Lavoie</a></li>
+						<li><a target="_blank" href="https://github.com/drdeteck/DramProject/issues/new" >Bug Report</a></li>
+						<li><a target="_blank" href="http://houblonva.philippelavoie.com/" >Other project</a></li>
+						<li><a target="_blank" href="http://www.reddit.com/r/scotch" >Scotchit post</a></li>
+					</ul>
+				</div>
+				<div class="float-left footer-column" >
+					<h3>Technologies</h3>
+					<ul class="footer-list">
+						<li><a target="_blank" href="http://jquery.com/" >jQuery</a></li>
+						<li><a target="_blank" href="http://fredhq.com/projects/roundabout" >Roundabout</a></li>
+						<li><a target="_blank" href="http://twitter.github.com/bootstrap/" >Bootstrap</a></li>
+						<li><a target="_blank" href="http://glyphicons.com/" >Glyphicons</a></li>
+					</ul>
+				</div>
+				<div class="float-left footer-column" >
+					<h3>More</h3>
+					<ul class="footer-list">
+						<li><i class="icon-question-sign"></i> <a href="#about" role="button" data-toggle="modal" >About</a></li>
+						<li><i class="icon-envelope"></i> <a href="mailto:phil@philippelavoie.com" >Email me</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal hide" id="about" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" >
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+			<h3 id="myModalLabel">The Dram Project</h3>
+		</div>
+		<div class="modal-body" style="font-size:17px;">
+			<p>
+				My name is Philippe and I'm from Montréal. 
+				I'm a scotch amateur since 2011 and I read <strong><a href="http://www.reddit.com/r/scotch">Scotchit</a></strong> since then.
+				I went in Scotland for 3 weeks. 
+				There, I visited 6 distilleries and began what I call my bootcamp. 
+			</p>
+			<p>
+				When I came back, I had this idea of creating a reference website to hold the common distilleries and their whisky.
+				That was a nice way to discover the latest web technologies like <strong><a href="http://twitter.github.com/bootstrap/">Bootstrap</a></strong>
+				and to create something nice where you can find the official tasting notes of the most common whisky.
+			</p>
+			<p>
+				So, I hope you enjoy the site. You can <strong><a href="https://github.com/drdeteck/DramProject/issues/new">report a bug, send me a suggestion</a></strong> or a 
+				<strong><a href="mailto:phil@philippelavoie.com">contact me</a></strong> for any questions.
+			</p>
+			<p class="signature">Phil</p>
+		</div>
+		<div class="modal-footer">
+			<button class="btn btn-inverse" data-dismiss="modal" aria-hidden="true">Close</button>
+		</div>
+	</div>
+
+	<!-- Templates -->
+	<script type="text/html" id="menu-header-template"><li data-bind="text: Name, css: Class" data-role="list-divider"></li></script>				
+	<script type="text/html" id="menu-item-template"><li><a data-bind="text: Name, attr: { 'href' : '#' + PL.Utilities.Idfy(Name) }" rel="external"></a></li></script>				
+	<script type="text/html" id="distillery-template">
+		<div class="page" data-bind="attr : { 'id' : PL.Utilities.Idfy(Distillery) }" data-role="page">
+		   <ul data-bind="attr : { 'id' : PL.Utilities.Idfy(Distillery) + '-roundabout' }, template: { name: 'bottle-template' , foreach: Bottles}"></ul>
+		</div>
+	</script>
+	<script type="text/html" id="bottle-template">
+		<li class="card-holder" data-bind="css : PL.Utilities.Idfy(Distillery)">
+			<div class="card">
+			   <div class="left-image" data-bind="style: { 'backgroundImage': 'url(' + PictureUrl + ')' }"></div>
+			   <div class="info">
+				  <h1 data-bind="text: Distillery"></h1>
+				  <h2 data-bind="text: Name"></h2>
+				  <p data-bind="text: Description"></p>
+				  <h3>Origine</h3>
+				  <div data-bind="text: Nose"></div>
+				  <h3>Expérience</h3>
+				  <p data-bind="text: Taste"></p>
+				  <h3>Citation</h3>
+				  <span data-bind="text: Finish"></span>
+			   </div>
+			</div>
+		</li>
+	</script>
+
+</body>
+</html>
