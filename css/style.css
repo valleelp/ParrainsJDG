@@ -368,10 +368,10 @@ h3
 }
 
 
-.input.change {
+.change {
 background-image:url(http://i.imgur.com/p4pHmZS.gif);
 }
 
-.input.change:hover {
+.change:hover {
 background-image:url(http://i.imgur.com/y0ztKO2.gif);
 } 
