@@ -360,18 +360,16 @@ h3
 	margin-bottom: 0px;
 }
 
-.menu-dele
-{
-	position: absolute;
+.menu-dele {
+		position: absolute;
 	left: 300px;
 	top: 20px;
-}
-
-
-.change {
 background-image:url(http://i.imgur.com/p4pHmZS.gif);
 }
 
-.change:hover {
+.menu-dele:hover {
+		position: absolute;
+	left: 300px;
+	top: 20px;
 background-image:url(http://i.imgur.com/y0ztKO2.gif);
 } 
