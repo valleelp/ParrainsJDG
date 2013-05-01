@@ -368,3 +368,10 @@ h3
 	top: 20px;
 }
 
+input.change {
+background-image:url(http://i.imgur.com/p4pHmZS.gif);
+}
+
+input.change:hover {
+background-image:url(http://i.imgur.com/y0ztKO2.gif);
+} 
