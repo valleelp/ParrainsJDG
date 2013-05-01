@@ -362,17 +362,16 @@ h3
 
 .menu-dele
 {
-	float: left;
 	position: absolute;
 	left: 300px;
 	top: 20px;
 }
 
 
-.menu-dele > input.change {
+.input.change {
 background-image:url(http://i.imgur.com/p4pHmZS.gif);
 }
 
-.menu-dele > input.change:hover {
+.input.change:hover {
 background-image:url(http://i.imgur.com/y0ztKO2.gif);
 } 
