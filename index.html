@@ -48,10 +48,9 @@
 			<span class="title">Parrains</span>
 			<span class="title">2014</span>
 		</div>
-		
-		<button id="menuButtonDele" type="button" name="menuButtonDele" class="menu-dele">
-  			<img src="http://i.imgur.com/y0ztKO2.gif" id="imgDele" />
-		</button>
+
+		<input type="image" class="menu-dele" src="http://i.imgur.com/p4pHmZS.gif" onMouseOver="this.src='http://i.imgur.com/y0ztKO2.gif'" onMouseOut="this.src='http://i.imgur.com/p4pHmZS.gif'">
+
 		<div id="nav-list" class="nav well sidebar-nav">
 			<ul id="paging" class="nav nav-list" data-role="listview" data-bind="template: {name: MenuDisplayMode, foreach: PL.DramProject.ViewModel.Regions, afterRender: PL.DramProject.ViewModel.RenderMenuItem }, jqmRefreshList: PL.DramProject.ViewModel.Regions">
 			</ul>
