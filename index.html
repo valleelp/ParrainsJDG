@@ -49,14 +49,13 @@
 			<span class="title">2014</span>
 		</div>
 
-		<input type="image" class="menu-dele" src="http://i.imgur.com/pFkuUnd.gif" onMouseOver="this.src='http://i.imgur.com/hsMqrUA.gif'" onMouseOut="this.src='http://i.imgur.com/pFkuUnd.gif'">
-
 		<div id="nav-list" class="nav well sidebar-nav">
 			<ul id="paging" class="nav nav-list" data-role="listview" data-bind="template: {name: MenuDisplayMode, foreach: PL.DramProject.ViewModel.Regions, afterRender: PL.DramProject.ViewModel.RenderMenuItem }, jqmRefreshList: PL.DramProject.ViewModel.Regions">
 			</ul>
 		</div>
 	</div>
-
+	
+	<input type="image" class="menu-dele" src="http://i.imgur.com/pFkuUnd.gif" onMouseOver="this.src='http://i.imgur.com/hsMqrUA.gif'" onMouseOut="this.src='http://i.imgur.com/pFkuUnd.gif'">
 
 	<div id="wrapper" data-bind="template: { name: 'distillery-template' , foreach: PL.DramProject.ViewModel.Distilleries, afterRender: PL.DramProject.ViewModel.RenderDistillery }"></div>
 
