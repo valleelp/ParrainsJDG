@@ -361,15 +361,6 @@ h3
 }
 
 .menu-dele {
-	position: absolute;
-	left: 300px;
-	top: 20px;
-	background:url(http://i.imgur.com/p4pHmZS.gif);
+	float: left;
+	margin-top: 20px;
 }
-
-.menu-dele:hover {
-	position: absolute;
-	left: 300px;
-	top: 20px;
-	background:url(http://i.imgur.com/y0ztKO2.gif);
-} 
