@@ -247,8 +247,8 @@ ul
 	position: relative;
 	z-index: 20;
 	margin-right: 20px;
-	padding-top: 173px;
-	left: -165px;
+	float: left;
+	width: 1200px;
 }
 
 #wrapper > div
@@ -340,6 +340,7 @@ ul
 	{
 		position: relative;
 		z-index: 100;
+		float: left;
 	}
 }
 
