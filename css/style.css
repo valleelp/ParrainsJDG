@@ -363,6 +363,11 @@ h3
 	margin-bottom: 0px;
 }
 
+.header 
+{
+	float: left;
+}
+
 .menu-dele {
 	float: left;
 	margin-top: 20px;
