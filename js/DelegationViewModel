@@ -1,37 +1,36 @@
 // Class to holds a Delegation attributes
-function DeleViewModel(region, distillery, order, name, alcohol, appearance, nose, taste, finish, description, externalurl, pictureurl, scotchiturl) {
+function DeleViewModel(category, university, order, year, execChief, execSocial, execFinance, execMachine, execSponsor, execMarketing, parrain1, parrain2, photoUrl) {
   var self = this;
 	
-	self.Region = region;
-	self.Distillery = distillery;
+	self.Category = category;
+	self.University = university;
 	self.Order = order;
-	self.Name = name;
-	self.Alcohol = alcohol;
-	self.Appearance = appearance;
-	self.Nose = nose;
-	self.Taste = taste;
-	self.Finish = finish;
-	self.Description = description;
-	self.ExternalUrl = externalurl;
-	self.PictureUrl = pictureurl;
-	self.ScotchitUrl = scotchiturl;
+	self.Year = year;
+	self.ExecChief = execChief;
+	self.ExecSocial = execSocial;
+	self.ExecFinance = execFinance;
+	self.ExecMachine = execMachine;
+	self.ExecSponsor = execSponsor;
+	self.ExecMarketing = execMarketing;
+	self.Parrain1 = parrain1;
+	self.Parrain2 = parrain2;
+	self.PhotoUrl = photoUrl;
 }
 
-
-function DistilleryViewModel(region, distillery) {
+function UniversityViewModel(category, university) {
 	var self = this;
-	var minBottleForRoundabout = 5;
+	var minDeleForRoundabout = 5;
 		
-	self.Region = region;
-	self.Distillery = distillery;
-	self.Bottles = ko.observableArray();
+	self.Category = category;
+	self.University = university;
+	self.Delegations = ko.observableArray();
 	
-	// Method to add dummies to Bottles for a better jQuery Roundabout rendering
-	self.AddDummyBottlesIfNecessary = function() {
+	// Method to add dummies to Deles for a better jQuery Roundabout rendering
+	self.AddDummyDelegationsIfNecessary = function() {
 		var safetyCounter = 0;
 		
-		while(self.Bottles().length < 5 && safetyCounter < 5) {
-			self.Bottles.push(new BottleViewModel("", "removeme"));
+		while(self.Delegations().length < 5 && safetyCounter < 5) {
+			self.Delegations.push(new DeleViewModel("", "removeme"));
 			safetyCounter++;
 		}
 	};
