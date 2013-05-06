@@ -1,0 +1,5 @@
+function DeleViewModel() {
+  var self = this;
+	
+	self.
+}
